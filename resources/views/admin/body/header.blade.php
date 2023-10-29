@@ -336,8 +336,8 @@
                                 <a class="dropdown-item" href="javascript:;">
                                     <div class="d-flex align-items-center">
                                         <div class="user-online">
-                                            <img src="assets/images/avatars/avatar-11.png" class="msg-avatar"
-                                                alt="user avatar">
+                                            <img src="{{ asset('adminbackend/assets/images/avatars/avatar-11.png ') }}"
+                                                class="msg-avatar" alt="user avatar">
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="msg-name">Johnny Seitz <span class="msg-time float-end">5 days
@@ -357,7 +357,8 @@
             <div class="user-box dropdown">
                 <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                    <img src="{{ asset('adminbackend/assets/images/avatars/avatar-2.png ') }}" class="user-img"
+                        alt="user avatar">
                     <div class="user-info ps-3">
                         <p class="user-name mb-0">Pauline Seitz</p>
                         <p class="designattion mb-0">Web Designer</p>
@@ -382,7 +383,7 @@
                     <li>
                         <div class="dropdown-divider mb-0"></div>
                     </li>
-                    <li><a class="dropdown-item" href="javascript:;"><i
+                    <li><a class="dropdown-item" href="{{ route('admin.logout') }}"><i
                                 class='bx bx-log-out-circle'></i><span>Logout</span></a>
                     </li>
                 </ul>
