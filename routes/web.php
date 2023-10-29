@@ -33,14 +33,14 @@ Route::middleware('auth')->group(function () {
 require __DIR__ . '/auth.php';
 
 /**
- * Admin Routes
+ * Admin Dashboard Routes
  */
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
 });
 
 /**
- * Vendor Routes
+ * Vendor Dashboard Routes
  */
 Route::middleware(['auth', 'role:vendor'])->group(function () {
 
