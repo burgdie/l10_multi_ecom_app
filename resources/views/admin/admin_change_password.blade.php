@@ -91,8 +91,9 @@
                                             <h6 class="mb-0">Confirm New Password</h6>
                                         </div>
                                         <div class="col-sm-9 text-secondary">
-                                            <input type="password" name="new_password_confirm" id="new_password_confirm"
-                                                class="form-control" placeholder="Confirm New Password" />
+                                            <input type="password" name="new_password_confirmation"
+                                                id="new_password_confirmation" class="form-control"
+                                                placeholder="Confirm New Password" />
                                         </div>
                                     </div>
                                     {{-- End Confirm New Password --}}
